@@ -1,0 +1,28 @@
+[project]
+name = "latent-logic"
+version = "3.1.0"
+description = "Z3 constraint solver for Windows privilege escalation and AV evasion path discovery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Chris Aziz", email = "chris@bombadil.systems"}]
+
+dependencies = [
+    "z3-solver>=4.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+latent-logic = "latent_logic.system:main"
+
+[project.urls]
+Homepage = "https://github.com/Bombadil-Systems/latent-logic"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["latent_logic*"]
