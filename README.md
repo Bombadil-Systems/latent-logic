@@ -18,7 +18,7 @@ Latent Logic has four layers:
 
 **State** models a Windows system: user context, integrity level, privileges, security products, attack surface (modifiable services, hijackable DLLs, writable paths).
 
-**Knowledge** contains empirical scanner behavioral categories derived from testing across 24 static analysis engines, 54 privilege escalation operations mapped to MITRE ATT&CK, and evasion primitives with per-category blind spot data.
+**Knowledge** contains empirical scanner behavioral categories derived from testing across 24 static analysis engines, 54 privilege escalation operations mapped to MITRE ATT&CK®, and evasion primitives with per-category blind spot data.
 
 **Solver** encodes the state and operations as Z3 constraints and finds satisfying assignments. For privesc, it finds operation chains that reach SYSTEM from your current integrity level. For evasion, it finds payload placement positions that fall in the blind spots of all specified AVs simultaneously.
 
